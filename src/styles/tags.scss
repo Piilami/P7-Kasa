@@ -1,0 +1,31 @@
+.Tags-container {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  height: 25px;
+  display: flex;
+}
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 37px;
+  margin-right: 10px;
+  background-color: $color-1;
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  height: 25px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+  .tag {
+    font-size: 10px;
+    width: 95px;
+    white-space: wrap;
+  }
+  .Tags-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.caroussel-container {
+  display: flex;
+  align-items: center;
+  height: 415px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.currImg {
+  position: absolute;
+  width: 24px;
+  bottom: 24px;
+  left: 50%;
+  color: white;
+}
+
+.img-caroussel {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.prev-Btn {
+  margin-left: 24px;
+  position: absolute;
+}
+.next-Btn {
+  margin-right: 24px;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .caroussel-container {
+    height: 255px;
+    margin-bottom: 15px;
+  }
+}

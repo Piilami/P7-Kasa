@@ -1,0 +1,18 @@
+Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  height: 209px;
+  color: white;
+  .Footer--Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logoFooter {
+  margin-bottom: 15px;
+}

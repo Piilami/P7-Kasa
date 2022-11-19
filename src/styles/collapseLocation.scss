@@ -1,0 +1,33 @@
+.container-collapse {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.collapse-loc {
+  display: flex;
+  width: 47%;
+}
+.text-menu-loc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 250px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-menu-loc {
+    justify-content: flex-end;
+    height: auto;
+    min-height: 140px;
+    padding-top: 20px;
+  }
+  .collapse-loc {
+    width: 100%;
+  }
+}

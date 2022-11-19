@@ -1,0 +1,17 @@
+.rating {
+  width: 100%;
+}
+.rating-container {
+  margin: 24px 0 34px 0;
+}
+.rate-stars {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .rate-stars {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+}

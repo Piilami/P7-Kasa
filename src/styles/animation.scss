@@ -1,0 +1,24 @@
+.open {
+  animation: rotate 0.2s both;
+}
+.close {
+  animation: rotateBack 0.2s both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateBack {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

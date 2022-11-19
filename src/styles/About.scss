@@ -1,0 +1,14 @@
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-about-menu {
+  width: 75%;
+}
+
+@media screen and (max-width: 900px) {
+  .container-about-menu {
+    width: calc(100% - 40px);
+  }
+}
