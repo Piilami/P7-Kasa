@@ -43,15 +43,15 @@
   .main-product {
     width: calc(100% - 40px);
   }
-  .info {
+  .allInfo {
     flex-direction: column;
   }
-  .main-info {
+  .location-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  .Sub-info {
+  .location-sub-info {
     flex-direction: row-reverse;
   }
   .title-product {
