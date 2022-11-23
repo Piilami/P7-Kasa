@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Error from "../pages/Error";
 
 const Card = () => {
   const [getLocations, setGetLocations] = useState([]);
@@ -9,6 +10,10 @@ const Card = () => {
         .then((res) => res.json())
         .then((data) => {
           setGetLocations(data);
+        })
+        .catch((error) => {
+          console.log(error);
+          return <Error />;
         });
     }
     fetchApi();
@@ -18,9 +23,7 @@ const Card = () => {
       {getLocations.map((p) => (
         <NavLink key={p.id} to={p.id} className="link-card">
           <div className="card">
-            <div className="img-container">
-              <img src={p.cover} alt="logement" />
-            </div>
+            <img src={p.cover} alt="logement" />
             <p className="title-card">{p.title}</p>
           </div>
         </NavLink>

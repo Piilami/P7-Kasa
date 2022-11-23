@@ -19,6 +19,10 @@ const Product = () => {
           const logement = data.find((p) => p.id === id);
           setLocation(logement);
           console.log(logement);
+        })
+        .catch((error) => {
+          console.log(error);
+          return <Error />;
         });
     }
     fetchApi();

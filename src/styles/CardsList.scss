@@ -1,5 +1,6 @@
 .container-card {
   display: flex;
+  z-index: 0;
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-radius: 25px;
