@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../components/Card";
-import Banner from "../components/Banner";
 
 const Home = () => {
   return (
     <div className="content-container">
       <main>
-        <Banner />
+        <div className="Banner-container">
+          <p className="Banner-txt">Chez vous, partout et ailleurs</p>
+        </div>
         <Card />
       </main>
     </div>

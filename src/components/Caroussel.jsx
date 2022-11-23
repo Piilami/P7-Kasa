@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import Logements from "../data/logements.json";
 
-const Caroussel = () => {
-  const { id } = useParams();
-  const logement = Logements.find((p) => p.id === id);
-  const imgLogement = logement.pictures;
+const Caroussel = (props) => {
+  const imgLogement = props.location.pictures;
   const [currentImg, setCurrentImg] = useState(0);
 
   function nextImg() {

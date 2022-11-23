@@ -18,6 +18,7 @@
   }
   li {
     margin: 10px;
+    margin-left: 50px;
     border-bottom: solid 2px transparent;
     white-space: nowrap;
     a {
@@ -57,5 +58,8 @@
 @media screen and (max-width: 900px) {
   .navigation {
     width: calc(100% - 40px);
+    li {
+      margin-left: 10px;
+    }
   }
 }

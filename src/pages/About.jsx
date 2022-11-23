@@ -7,7 +7,7 @@ const About = () => {
     <div className="content-container">
       <main>
         <div className="Banner-container-about"></div>
-        <div className="container-about-menu" key={"pouet"}>
+        <div className="container-about-menu">
           {about.map((p, id) => (
             <Collapse key={id} title={p.Titre} content={p.Content} />
           ))}
